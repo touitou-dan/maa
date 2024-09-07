@@ -4,4 +4,4 @@ However, some dynamic data structures have a major drawback: they hinder the pro
 
 Memory access amortization is a method that aims to facilitate speculative execution by interleaving the execution of multiple operations in a single thread, thereby increasing the number of independent memory accesses that can be executed in parallel.
 
-The file list_array.c provides an example demonstrating how interleaving linked list scans can accelerate performance by a factor of ten on AWS's Graviton 3 processors. Please note that compilation optimizations further improve speculative execution potential. It is recommended to compile with -O3.
+list_array.c provides an example demonstrating how interleaving linked list scans can accelerate performance by a factor of ten on AWS's Graviton 3 processors. Please note that compilation optimizations further improve speculative execution potential. It is recommended to compile with -O3.
